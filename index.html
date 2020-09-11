@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Fire Through Time (serious)</title>
+	<meta charset="UTF-8" />
+	<style>
+		#loader {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			font-size: 4rem;
+
+			background-color: #22537A;
+			color: white;
+
+			z-index: 9999999;
+		}
+
+		#map {
+			width: 100%;
+			height: calc(100vh - 5rem);
+		}
+
+		.controls {
+			height: 5rem;
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+</head>
+
+<body>
+	<div id="loader"><img src="https://lh3.googleusercontent.com/proxy/P_GztBtw2Qz7lVkiXsM_u2pU3zTFK80mzYM8qam52tNaQYpEx9s0UkU5XVXLUrPw-JeyCOnbJIZ3a2nt6HutESO_por7ih3WxRNmc9M9ZjWZGOj8kEEzaVCmC93gnab5777kibT27a9Kr2Q-RcXw7tp0pj6Lnt8X0uWSFwSl"></div>
+	
+	<section class=".controls">
+		<label>Evacuations</label>
+		<input id="slider" type="range" min="0" max="0" />
+		<label>Thermals</label>
+		<input id="thermal-slider" type="range" min="0" max="0" />
+	</section>
+
+	<button id="play">play</button>
+	<div id="map"></div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
