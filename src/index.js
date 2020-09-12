@@ -92,7 +92,7 @@ async function fetchThermalData(index) {
       return Leaflet.circleMarker([
         feature.geometry.coordinates[1],
         feature.geometry.coordinates[0]
-      ]).on('add', () => console.log('loaded'));
+      ], { fillColor: 'red', stroke: false });
     }))
 }
 
